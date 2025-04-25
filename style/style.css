@@ -49,6 +49,7 @@ nav a:hover, footer p a:hover {
 
 section#sobre {
     background-image: url(../image/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-color: black;
     background-size: cover;
     max-height: 600px;
     min-height: 400px;
