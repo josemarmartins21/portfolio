@@ -173,7 +173,8 @@ section#contactos {
 }
 section#contactos div {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    
 }
 .link {
     margin-left: 10px;
