@@ -20,12 +20,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    padding: 20px;
+    padding: 20px 0px 0px 0px;
     background-color: #1a1a1a;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    
 }
 header h1 {
     color: var(--fundo);
@@ -33,15 +34,28 @@ header h1 {
     font-family: var(--font-principal);
     
 }
+
+div.card-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav {
     padding-top: 10px;
+    display:  none;
     
+}
+
+i.menu {
+    color: white;
 }
 nav a {
     color: var(--fundo);
     text-decoration: none;
-    padding: 5px;
-    margin: 5px;
+    padding: 5px 0;
+    display: block;
+    border: 1px solid white;
 }
  .sites {
     text-decoration: none;
