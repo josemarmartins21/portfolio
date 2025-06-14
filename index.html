@@ -11,29 +11,87 @@
 <body onresize="mudouTamanho()">
     <header>
         <div class="card-menu">
-            <h1>Josimar Dev Web</h1>
+            <h1>Josimar Martins</h1>
             <i class="bi bi-menu-button-wide menu" onclick="mostraMenu()"></i>
         </div>
+        <div class="social-networks">
+            <a href="https://www.facebook.com/profile.php?id=61550890327273" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/josemar-martins-89029b31a/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="http://instagram.com/josemar_martins21" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+
+            <a href="https://github.com/josemarmartins21" target="_blank">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
         <nav id="barra">
-            <a href="#sobre">Sobre mim</a>
-            <a href="#projetos">Projectos</a>
-            <a href="#hablidades">hablidades</a>
+            <a href="#sobre" onclick="ocultar()">Sobre mim</a>
+            <a href="#projectos" onclick="ocultar()">Projectos</a>
+            <a href="#hablidades" onclick="ocultar()">hablidades</a>
         </nav>
     </header>
-    <section id="sobre" class="sobre">
-        <p>
-        Meu nome é Josimar Martins, sou estudante de informática, gosto de desenvolvimento web e sou apaixonado por tecnológia.
-        No meu tempo livre gosto de ficar com os meus amigos e assistir conteudos relacionados a tecnológia
-        </p>
-    </section>
-    <section id="projetos">
+        <section id="minha-foto">
+            
+        </section>
+
+
+
+        <section id="sobre" class="sobre">
+                <h1 id="title-about">Mais acerca de mim</h1>
+                <div class="about-me">
+                    <p>
+                        Meu nome é <strong>Josimar Martins</strong>, sou estudante do tereceiro ano do <strong>curso médio técninco de informática</strong>. Trabalho como <strong>técninco de redes de computadores</strong> em uma ISP, mas também faço alguns prjectos pessoais relacionado a área de desenvolvimento de software onde o meu foco principal é o backend, moro em Luanda, Angola.
+                    </p>
+                    <p>
+                        No futuro pretendo ser o desenvolvedor de software e poder contribuir para a digitalização de tarefas repetitivas e desgastantes em <strong>Angola</strong> e no mundo. A área que até ao momento eu pretendo me especializar é a de <strong>arquitetuara de software</strong>
+                    </p>
+                </div>
+
+
+        </section>
+
+    <section id="projectos">
         <h1>Projectos feitos por mim</h1>
-            <div id="imagem-desc">
-                <a href="https://josemarmartins21.github.io/cordel/" class="img" target="_blank"><img src="image/cordel.jpg" alt="site-cordel-religioso" class="imagens"></a>
-                <p class="paragrafo" >Este é o site <a href="https://josemarmartins21.github.io/cordel/" target="_blank" class="sites"><strong>cordel moderno</strong></a> criei ele no tempo de quaresma e é o site mais bonito que eu já fiz esteticamente graças ao <a href="https://github.com/gustavoguanabara" class="sites"><strong>prof. Gustavo Guanabara</strong></a></p>
-                <a href="https://josemarmartins21.github.io/personal-projects/" class="img" id="zonaatleta" target="_blank"><img src="image/zonaatleta.jpg" alt="site-zona-atleta" class="imagens"></a>
-                <p class="paragrafo">Site de desporto que eu criei apenas para testar os meus conhecimentos em flexbox</p>
+           <a href="" class="item">
+            <div class="image">
+                <img src="image/qmanager.jpg" alt="site-qmanager">
             </div>
+            <div class="paragrafo">
+                <h3>Site que gerenciará clientes da QoS Tel</h3>
+
+            </div>
+           </a>
+           <a href="" class="item">
+                <div class="image">
+                    <img src="image/site-de-viagens.jpg" alt="site-de-viagens">
+                </div>
+                <div class="paragrafo">
+                    <h3>Site para promoção de viagens</h3>
+                </div>
+           </a>
+           <a href="" class="item">
+                <div class="image">
+                    <img src="image/cordel.jpg" alt="projecto-cordel">
+                </div>
+                <div class="paragrafo">
+                    <h3>Cordel moderno em alusivo a semana santa</h3>
+                </div>
+           </a>
+           <a href="" class="item">
+                <div class="image">
+                    <img src="image/zonaatleta.jpg" alt="zonaatleta">
+                </div>
+                <div class="paragrafo">
+                    <h3>Site desportivo com objectivo de falar qualquer coisa de desporto sem filtro algum</h3>
+                </div>
+           </a>
         </section>
         <section id="hablidades">
             <h1>Tecnológias que eu domino</h1>
@@ -46,37 +104,9 @@
             </div>
         </section>
         
-    <section id="contactos">
-        <h1>Redes sociais</h1>
-        <div>
-            <a href="https://github.com/josemarmartins21" target="_blank" class="link"><img src="image/github.png" alt="github-logo" class="icone"></a>
-            <a href="https://www.facebook.com/profile.php?id=61550890327273" target="_blank" class="link"><img src="image/facebook.png" alt="facebook-logo" class="icone"></a>
-            <a href="https://www.linkedin.com/in/josemar-martins-89029b31a/" target="_blank" class="link"><img src="image/linkedin.png" alt="linkedin-logo" class="icone"></a>
-        </div>
-    </section>
     <footer>
         <p>&copy; Todos os direitos reservados a <a href="https://github.com/josemarmartins21" target="_blank">Josimar Martins</a></p>
     </footer>
-
-    <script>
-        function mostraMenu() {
-            let barra = document.getElementById('barra')
-
-
-            if (barra.style.display == 'none') {
-                barra.style.display = 'block'
-            } else {
-                barra.style.display = 'none'
-            }
-        }
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                barra.style.display = 'block' 
-            } else {
-                barra.style.display = 'none' 
-            }
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
