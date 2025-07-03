@@ -54,6 +54,7 @@ nav {
 
 i {
     color: white;
+    font-size: 1.4em;
 }
 
 i.menu {
@@ -86,7 +87,6 @@ nav a {
     color: black;
  }
  
-
 /*Section hero*/
 section#minha-foto {
     background: black url(../image/hero.jpg) no-repeat center bottom;
@@ -121,9 +121,6 @@ div.about-me p {
     font-family: var(--font-secundaria);
     text-align: center;
 }
-
-
-
 
 /*Secção de meus projectos*/
 #projectos h1 {
